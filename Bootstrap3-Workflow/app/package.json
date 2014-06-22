@@ -1,0 +1,17 @@
+{
+  "name": "Boostrap-Playanatomy",
+  "version": "0.0.2",
+  "description": "Boostrap workflow",
+  "keywords": [
+    "Bootstrap",
+    "Play Framework"
+  ],
+  "author": "Marcin Kopacz, Chyzwar",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-less": "~0.11.0",
+    "grunt-contrib-watch": "~0.6.1"
+  }
+}
+
