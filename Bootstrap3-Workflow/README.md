@@ -7,6 +7,8 @@ This is Bootstrap workflow. Currently based on Bootstrap 3.1.1, It is fitted to 
     <li>bower to manage Dependency</li>
     <li>grunt to auto-compile LESS</li>
     <li>grunt to auto sync browser</li>
+    <li>modernizr to work with browsers</li>
+
 </ol>
 
 <h1>Requirements: </h1>
@@ -36,7 +38,7 @@ app                      → Application sources
  └ assets                → Compiled asset sources
     └ stylesheets        → Typically LESS CSS sources
     	└ less        	 → Bootstrap LESS sources
-    └ javascripts        → Typically 
+    └ javascripts        → modernizr.js 
   Gruntfile.js           → Grunt configuartion, It will compile less on changes to css
 public                   → Public assets
  └ stylesheets           → Bootstrap compiled CSS files
