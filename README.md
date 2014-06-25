@@ -7,6 +7,12 @@ This is Bootstrap workflow. Currently based on Bootstrap 3.1.1, It is fitted to 
     <li>bower to manage Dependency</li>
     <li>grunt to auto-compile LESS</li>
     <li>grunt to auto sync browser</li>
+    <li><a href="http://modernizr.com/docs/">modernizr</a> to work with browsers</li>
+    <li><a href="https://github.com/scottjehl/Respond">respond</a> for IE8 media queries</li>
+    <li><a href="http://code.google.com/p/html5shiv/"> html5shiv to support HTML5 in IE</a></li>
+
+
+
 </ol>
 
 <h1>Requirements: </h1>
@@ -20,6 +26,7 @@ This is Bootstrap workflow. Currently based on Bootstrap 3.1.1, It is fitted to 
 <h1>How to use it</h1> 
 
 1. Clone this repository
+    Use folder -> Bootstrap3-Workflow for your new project copy/rename and move to desired location
 2. Configure your Gruntfile depends on how you serve you website
     https://github.com/shakyShane/grunt-browser-sync#options
 3. cd to app/asssets and run this commands:
@@ -35,7 +42,7 @@ app                      → Application sources
  └ assets                → Compiled asset sources
     └ stylesheets        → Typically LESS CSS sources
     	└ less        	 → Bootstrap LESS sources
-    └ javascripts        → Typically 
+    └ javascripts        → modernizr.js 
   Gruntfile.js           → Grunt configuartion, It will compile less on changes to css
 public                   → Public assets
  └ stylesheets           → Bootstrap compiled CSS files
