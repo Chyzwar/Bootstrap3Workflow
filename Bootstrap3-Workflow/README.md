@@ -9,7 +9,7 @@ This is Bootstrap workflow. Currently based on Bootstrap 3.1.1, It is fitted to 
     <li>grunt to auto sync browser</li>
     <li><a href="http://modernizr.com/docs/">modernizr</a> to work with browsers</li>
     <li><a href="https://github.com/scottjehl/Respond">respond</a> for IE8 media queries</li>
-    <li><a href="http://code.google.com/p/html5shiv/"> html5shiv </a></li>
+    <li><a href="http://code.google.com/p/html5shiv/"> html5shiv to support HTML5 in IE</a></li>
 
 
 
