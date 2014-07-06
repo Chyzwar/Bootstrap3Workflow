@@ -18,7 +18,7 @@ cp -r Sources/modernizr/modernizr.js Bootstrap3-Workflow/app/assets/javascripts/
 cp -r Sources/bootstrap/dist/fonts/* Bootstrap3-Workflow/public/fonts/
 cp -r Sources/bootstrap/dist/js/* Bootstrap3-Workflow/public/javascripts/
 cp -r Sources/bootstrap/dist/css/bootstrap.min.css Bootstrap3-Workflow/public/stylesheets/main.css
-
+cp -r Sources/bootstrap/less/* Bootstrap3-Workflow/app/assets/stylesheets/less/
 
 cd Bootstrap3-Workflow/app
 
