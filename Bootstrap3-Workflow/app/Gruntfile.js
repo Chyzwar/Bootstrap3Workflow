@@ -38,6 +38,7 @@ module.exports = function(grunt) {
         },
           options: {
               watchTask: true,
+              //I am hosting my projects using apache virtual hosts, I define ServerName and /etc/hosts
               host : "test.local",
               ghostMode: {
                 clicks: true,
