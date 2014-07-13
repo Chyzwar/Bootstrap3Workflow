@@ -1,6 +1,6 @@
 This is Bootstrap workflow. Currently based on Bootstrap 3.2.0, It is fitted to be used as simple front-end projects. Its include collection of tools to speed up development
 
-<h1> What tools are included:</h1>
+<h2> What tools are included:</h1>
 <ol>
     <li><a href="https://github.com/twbs/bootstrap">Boostrap</a></li>
     <li>jQuery 2.1.1</li>
@@ -15,7 +15,7 @@ This is Bootstrap workflow. Currently based on Bootstrap 3.2.0, It is fitted to 
 
 </ol>
 
-<h1>Requirements: </h1>
+<h2>Requirements: </h2>
 <ol>
     <li><a href="http://nodejs.org/">node.js</a></li>
     <li><a href="https://www.npmjs.org/doc/README.html">npm</a></li>
@@ -23,7 +23,7 @@ This is Bootstrap workflow. Currently based on Bootstrap 3.2.0, It is fitted to 
     <li><a href="https://github.com/bower/bower">bower</a></li>
 </ol>
 
-<h1>How to use it</h1> 
+<h2>How to use it</h2> 
 <ol>
     <li>Clone this repository
      <ul>
@@ -48,10 +48,12 @@ This is Bootstrap workflow. Currently based on Bootstrap 3.2.0, It is fitted to 
 
 
 
-
-<h1>Updating Dependencies</h1>
-<p>If you are smart enough and you are using Linux just run: sudo sh update.sh </p>
-<p>But run this before you rename "Bootstrap3-Workflow".</p>
+<h2>Updating Dependencies</h2>
+<p>If you use linux , you can run: </p>
+<ol>
+    <li>chmod 755 update.sh</li>
+    <li>sudo ./update.sh</li>
+</ol>
 
 <pre>
 This project anatomy:
