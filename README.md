@@ -3,13 +3,17 @@ This is Bootstrap workflow. Currently based on Bootstrap 3.2.0, It is fitted to 
 <h2> What tools are included:</h2>
 <ol>
     <li><a href="https://github.com/twbs/bootstrap">Boostrap</a></li>
-    <li>jQuery 2.1.1</li>
-    <li>bower to manage Dependency</li>
-    <li>grunt to auto-compile LESS</li>
+    <li><a href="http://jquery.com/">jQuery 2.1.1 </a></li>
+    <li><a href="http://bower.io/">bower to manage Dependency</a></li>
+    <li>grunt to <a href="https://github.com/gruntjs/grunt-contrib-less">auto-compile LESS</a></li>
+    <li>grunt to concat javascript files"</li>
+    <li><a href="https://github.com/gmarty/grunt-closure-compiler">closure compile</a> your JavaScript</li>
     <li>grunt to auto sync browser</li>
+    <li><a href="https://github.com/nDmitry/grunt-autoprefixer">autoprefix</a> you css</li>
     <li><a href="http://modernizr.com/docs/">modernizr</a> to work with browsers</li>
     <li><a href="https://github.com/scottjehl/Respond">respond</a> for IE8 media queries</li>
     <li><a href="http://code.google.com/p/html5shiv/"> html5shiv</a> to support HTML5 in IE</li>
+
 </ol>
 
 <h2>Requirements: </h2>
@@ -20,7 +24,7 @@ This is Bootstrap workflow. Currently based on Bootstrap 3.2.0, It is fitted to 
     <li><a href="https://github.com/bower/bower">bower</a></li>
 </ol>
 
-<h2>How to use it</h2> 
+<h2>How to use it during development</h2> 
 <ol>
     <li>Clone this repository
      <ul>
@@ -35,12 +39,28 @@ This is Bootstrap workflow. Currently based on Bootstrap 3.2.0, It is fitted to 
     <li>cd to app/asssets and run this commands:
         <ul>
         <li>npm install    → This will install grunt dependencies</li>
-        <li>npm install grunt-browser-sync --save-dev →This will install broser-sync</li>
-        <li>grunt          → This will watch Less folder and compile main.less to main.css when changes detected also reload browsers</li>
+        <li>grunt          → watch for changes and Compile LESS to CSS, concat javascript, refresh browser </li>
         </ul>
     </li>
     <li>Add generated sniped to your index.html before the end of body</li>
+</ol>
+When you want to write CSS/LESS do it in app/assets/stylesheets/less/main.less, use import if page is big enough
+When you want to write javascript do it in  app/assets/javascripts/interaction.js, to add another jvascript use grunfile concat config
+Idealy webage will have only one css and one javascript during producton.
 
+
+
+<h2>How to use it during production</h2> 
+<ol>
+    <li>Remove modernizer from html
+    </li>
+    <li>Remover console.log and use google closure compiler also add prefixes to you css by:
+        <ul>
+            <li>grunt build</li>
+        </ul>
+    </li>
+    <li>Remove browser-sync script from html</li>
+    <li>change javascript into this one: interaction.closure-compiled.min.js',</li>
 </ol>
 
 
@@ -57,6 +77,8 @@ This is Bootstrap workflow. Currently based on Bootstrap 3.2.0, It is fitted to 
     <li>go to Sources and run bower update</li>
     <li>Then manualy copy/paste stuff to correct folders  </li>
 </ol>
+
+
 <pre>
 This project anatomy:
 
@@ -74,4 +96,5 @@ public                   → Public assets
  └ jquery                → jQuery 
 index.html               → Working basic template.
 </pre>
+
 
