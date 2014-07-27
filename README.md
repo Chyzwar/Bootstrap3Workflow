@@ -66,8 +66,9 @@ Idealy webage will have only one css and one javascript during producton.
 
 
 
-<h2>Updating Dependencies, before you Bootstrap3-Workflow </h2>
-<p>If you use linux , you can run: </p>
+<h2>Updating Dependencies</h2>
+Do it before you rename Bootstrap3-Workflow folder
+<p>If you use linux(ubuntu) , you can run: </p>
 <ol>
     <li>chmod 755 update.sh</li>
     <li>sudo ./update.sh</li>
@@ -87,14 +88,17 @@ app                      → Application sources
  └ assets                → Compiled asset sources
     └ stylesheets        → Typically LESS CSS sources
     	└ less        	 → Bootstrap LESS sources
-    └ javascripts        → modernizr.js 
+    └ javascripts        → modernizr.js
+    └ jquery             → jQuery
+  └ closure-compiler     → As name suggest
+  └ node_modules         → npm and grunt stuff
+  package.json           → npm project definition
   Gruntfile.js           → Grunt configuartion
 public                   → Public assets
- └ stylesheets           → Bootstrap compiled CSS files
- └ javascripts           → Custom Javascript files and compilled javascrpit for Bootstrap, also HTML5shiv, Respond
+ └ stylesheets           → Compiled CSS
+ └ javascripts           → Production versions of javascript also HTML5shiv, Respond
  └ images                → Images files 
  └ fonts                 → Bootstrap fonts and any other
- └ jquery                → jQuery 
 index.html               → Working basic template.
 </pre>
 
