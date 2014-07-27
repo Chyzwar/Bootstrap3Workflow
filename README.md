@@ -4,12 +4,13 @@ This is Bootstrap workflow. Currently based on Bootstrap 3.2.0, It is fitted to 
 <ol>
     <li><a href="https://github.com/twbs/bootstrap">Boostrap</a></li>
     <li><a href="http://jquery.com/">jQuery 2.1.1 </a></li>
-    <li><a href="http://bower.io/">bower to manage Dependency</a></li>
+    <li><a href="http://bower.io/">bower</a> to manage front-end dependencies</li>
     <li>grunt to <a href="https://github.com/gruntjs/grunt-contrib-less">auto-compile LESS</a></li>
-    <li>grunt to concat javascript files"</li>
+    <li>grunt to <a href="https://github.com/gruntjs/grunt-contrib-concat">concat</a> javascript files"</li>
     <li><a href="https://github.com/gmarty/grunt-closure-compiler">closure compile</a> your JavaScript</li>
-    <li>grunt to auto sync browser</li>
-    <li><a href="https://github.com/nDmitry/grunt-autoprefixer">autoprefix</a> you css</li>
+    <li>grunt to auto <a href="https://github.com/shakyshane/grunt-browser-sync">sync browser</a></li>
+    <li><a href="https://github.com/ehynds/grunt-remove-logging">remove console.log()</a> from javascript</li>
+    <li><a href="https://github.com/nDmitry/grunt-autoprefixer">autoprefix</a> your css</li>
     <li><a href="http://modernizr.com/docs/">modernizr</a> to work with browsers</li>
     <li><a href="https://github.com/scottjehl/Respond">respond</a> for IE8 media queries</li>
     <li><a href="http://code.google.com/p/html5shiv/"> html5shiv</a> to support HTML5 in IE</li>
@@ -44,7 +45,7 @@ This is Bootstrap workflow. Currently based on Bootstrap 3.2.0, It is fitted to 
     </li>
     <li>Add generated sniped to your index.html before the end of body</li>
 </ol>
-When you want to write CSS/LESS do it in app/assets/stylesheets/less/main.less, use import if page is big enough
+When you want to write CSS/LESS do it in app/assets/stylesheets/less/main.less, use import if page is big enough.
 When you want to write javascript do it in  app/assets/javascripts/interaction.js, to add another jvascript use grunfile concat config
 Idealy webage will have only one css and one javascript during producton.
 
@@ -54,7 +55,7 @@ Idealy webage will have only one css and one javascript during producton.
 <ol>
     <li>Remove modernizer from html
     </li>
-    <li>Remover console.log and use google closure compiler also add prefixes to you css by:
+    <li>Remove console.log and use google closure compiler also add prefixes to you css by:
         <ul>
             <li>grunt build</li>
         </ul>
