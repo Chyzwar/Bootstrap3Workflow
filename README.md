@@ -29,7 +29,7 @@ This is Bootstrap workflow. Currently based on Bootstrap 3.2.0, It is fitted to 
 <ol>
     <li>Clone this repository
      <ul>
-        <li>Use folder -> Bootstrap3-Workflow for your new project copy/rename and move to desired location</li>
+        <li>Use folder -> NewProject for your new project copy/rename and move to desired location</li>
      </ul>
     </li>
     <li>Configure your Gruntfile.js depends on how you serve you website
@@ -67,7 +67,7 @@ Idealy webage will have only one css and one javascript during producton.
 
 
 <h2>Updating Dependencies</h2>
-Do it before you rename Bootstrap3-Workflow folder
+Do it before you rename NewProject folder
 <p>If you use linux(ubuntu) , you can run: </p>
 <ol>
     <li>chmod 755 update.sh</li>
